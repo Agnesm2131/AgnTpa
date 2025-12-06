@@ -55,7 +55,6 @@
                         <configuration>
                             <minimizeJar>true</minimizeJar>
                             <relocations>
-                                <!-- Eğer isim çakışması olursa buraya ekle -->
                             </relocations>
                         </configuration>
                     </execution>
