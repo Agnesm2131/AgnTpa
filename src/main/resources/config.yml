@@ -1,0 +1,86 @@
+gui:
+  tpa-send:
+    title: "§aTPA Gönder"
+    items:
+      target-head:
+        slot: 13
+      accept:
+        slot: 15
+        material: "GREEN_STAINED_GLASS_PANE"
+        name: "§aGönder"
+        lore:
+          - "§7Bu oyuncuya TPA isteği gönder."
+      deny:
+        slot: 11
+        material: "RED_STAINED_GLASS_PANE"
+        name: "§cVazgeç"
+        lore:
+          - "§7İptal etmek için tıkla."
+
+  tpa-accept:
+    title: "§aTPA Kabul"
+    items:
+      target-head:
+        slot: 13
+      accept:
+        slot: 15
+        material: "GREEN_STAINED_GLASS_PANE"
+        name: "§aOnayla"
+        lore:
+          - "§7İsteği kabul et."
+      deny:
+        slot: 11
+        material: "RED_STAINED_GLASS_PANE"
+        name: "§cReddet"
+        lore:
+          - "§7İsteği reddet."
+
+tpa:
+  request-timeout: 120  # saniye cinsinden, isteğin otomatik silinme süresi
+
+
+
+discord:
+  webhook-url: ""
+
+messages:
+  request-denied-target: "&cTPA isteği reddedildi."
+  request-timeout-sender: "&cTPA isteğiniz %player% tarafından cevaplanmadığı için iptal edildi."
+  request-timeout-target: "&cTPA isteği %player% tarafından cevaplanmadığı için iptal edildi."
+  player-offline: "&cOyuncu çevrim dışı!"
+  buddy-tpa-start: "&aBuddy TPA ile ısınlanıyorsunuz..."
+  buddy-tpa-notify: "&a%player% seni Buddy TPA ile çağırıyor."
+  request-sent: "&aTPA isteği %player% adlı oyuncuya gönderildi!"
+  request-received: "&a%player% sana TPA gönderdi. Menüden onayla!"
+  request-none: "&cSana istek atan yok."
+  request-denied: "&cİstek reddedildi."
+  request-denied-sender: "&cTPA isteğin reddedildi."
+  btpa-usage: "&cDoğru kullanım: /btpa <on|off|add|remove|list>"
+  btpa-on: "&aBuddy TPA aktif! Artık izin verdiğin kişiler sana direkt TPA atabilir."
+  btpa-off: "&cBuddy TPA kapalı."
+  btpa-add-usage: "&cDoğru kullanım: /btpa add <oyuncu>"
+  btpa-remove-usage: "&cDoğru kullanım: /btpa remove <oyuncu>"
+  btpa-player-not-found: "&cOyuncu bulunamadı."
+  btpa-add-success: "&a%player% artık sana direkt TPA atabilir!"
+  btpa-remove-success: "&c%player% artık sana direkt TPA atamaz!"
+  btpa-error: "&cBir hata oluştu!"
+  btpa-list-empty: "&cHiçbir buddy'n yok."
+  btpa-list-header: "&aBuddy listesi:"
+  tpa-usage: "&cDoğru kullanım: /tpa <oyuncu>"
+  player-not-found: "&cOyuncu çevrim dışı veya bulunamadı."
+  cant-tpa-self: "&cKendine TPA atamazsın!"
+  btpa-check-error: "&cBuddy TPA kontrolü sırasında bir hata oluştu!"
+  btpa-start: "&aBuddy TPA başlatıldı! 5 saniye içinde teleport olacaksın."
+  btpa-move-cancel: "&cBuddy TPA iptal edildi! Hareket ettin."
+  btpa-complete: "&aBuddy TPA tamamlandı!"
+  countdown-title: "&eTeleport: %time%"
+  countdown-subtitle: "&7Hedef: %player%"
+  no-pending-request: "&cKabul edilecek TPA isteği yok!"
+  request-sent-sender: "&aTPA isteğiniz %player% adlı oyuncuya gönderildi!"
+  only-players: "&cBu komutu sadece oyuncular kullanabilir!"
+  no-request-to-deny: "&cReddedilecek TPA isteği yok!"
+  teleport-move-cancel: "&cTPA iptal edildi: Hareket ettin!"
+  teleport-start-title: "&aIsınma: %time%s"
+  teleport-start-subtitle: "&eTeleport olacak: %player%"
+  teleport-complete-sender: "&aTeleport tamamlandı!"
+  teleport-complete-target: "&a%player% sana teleport oldu!"

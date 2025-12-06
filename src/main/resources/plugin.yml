@@ -1,0 +1,25 @@
+name: AgnTpa
+main: me.agntpa.AgnTpa
+version: 1.0
+api-version: 1.21
+commands:
+  atpa:
+    description: TPA gönderme komutu
+    usage: /<command> <oyuncu>
+    aliases: [tpa]
+  atpaccept:
+    description: TPA kabul etme komutu
+    usage: /<command>
+    aliases: [tpaccept]
+  tpadeny:
+    description: TPA reddetme komutu
+    usage: /<command>
+  btpa:
+    description: Buddy TPA sistemi
+    usage: /btpa <on|add|remove> [oyuncu]
+  agntpa:
+    description: AgnTpa yönetim komutu
+    usage: /<command> reload
+    aliases: [atpaadmin]
+    permission: agntpa.reload
+    permission-message: "§cBu komutu kullanmak için yetkin yok!"
