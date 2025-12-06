@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class TpaManager {
 
-    private final Map<Player, Player> requests = new HashMap<>(); // target -> sender
+    private final Map<Player, Player> requests = new HashMap<>();
 
     private String msg(String key) {
         return AgnTpa.getInstance().getConfig()
@@ -45,7 +45,7 @@ public class TpaManager {
                     target.sendMessage(msg("request-timeout-target").replace("%player%", sender.getName()));
                 }
             }
-        }.runTaskLater(AgnTpa.getInstance(), 20L * timeout); // 20 tick = 1 saniye
+        }.runTaskLater(AgnTpa.getInstance(), 20L * timeout); 
     }
 
     public boolean hasActiveSender(Player sender) {
