@@ -22,7 +22,6 @@ public class TpaManager {
         return AgnTpa.getInstance().getConfig().getInt("tpa.request-timeout", 120);
     }
 
-    // TPA isteği gönder
     public void sendRequest(Player sender, Player target) {
         requests.put(target, sender);
 
