@@ -12,16 +12,9 @@ import java.time.format.DateTimeFormatter;
 
 public class WebhookUtil {
 
-    /**
-     * TPA log gönder
-     *
-     * @param type   "send", "accept", "deny"
-     * @param sender TPA atan oyuncu
-     * @param target TPA hedef oyuncu
-     */
     public static void sendTPALog(String type, Player sender, Player target) {
         String webhookUrl = AgnTpa.getInstance().getConfig().getString("discord.webhook-url");
-        if (webhookUrl == null || webhookUrl.isEmpty()) return; // config yoksa çık
+        if (webhookUrl == null || webhookUrl.isEmpty()) return;
 
         try {
             HttpURLConnection connection = (HttpURLConnection) new URL(webhookUrl).openConnection();
@@ -33,15 +26,15 @@ public class WebhookUtil {
             String title;
             switch (type.toLowerCase()) {
                 case "accept" -> {
-                    color = 0x00FF00; // yeşil
+                    color = 0x00FF00;
                     title = "TPA kabul edildi";
                 }
                 case "deny" -> {
-                    color = 0xFF0000; // kırmızı
+                    color = 0xFF0000; 
                     title = "TPA reddedildi";
                 }
                 default -> {
-                    color = 0xFFFF00; // sarı
+                    color = 0xFFFF00; 
                     title = "TPA gönderildi";
                 }
             }
